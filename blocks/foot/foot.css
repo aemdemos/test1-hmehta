@@ -1,0 +1,86 @@
+
+.foot-wrapper {
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* Set the text color to white */
+  padding: 20px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content horizontally */
+}
+
+.foot > div {
+  display: flex;
+  flex-direction: row; /* Arrange the child divs side by side */
+  justify-content: space-between; /* Ensure space between the child divs */
+  width: 100%;
+}
+
+.foot > div > div:first-child {
+  text-align: center; /* Center align the footer links */
+  margin-bottom: 20px;
+}
+
+.foot > div > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot > div > div:first-child ul li {
+  display: inline-block;
+  margin: 0 10px; /* Space out the links */
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+
+.foot > div > div:first-child ul li:last-child {
+  border-right: none;
+}
+
+.foot > div > div:last-child {
+  display: flex;
+  flex-direction: row; /* Arrange the columns side by side */
+  justify-content: space-between; /* Space out the columns */
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between columns */
+}
+
+.foot > div > div:last-child > div {
+  flex: 1; /* Ensure each column takes equal space */
+  display: flex;
+  flex-direction: column; /* Stack items in the column */
+}
+
+.foot > div > div:last-child p {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.foot > div > div:last-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px 20px 0;
+}
+
+.foot > div > div:last-child ul li {
+  margin-bottom: 5px; /* Add spacing between list items */
+  color: #fff; /* Ensure text color is white */
+}
+
+.foot a {
+  color: #fff; /* Ensure link color is white */
+}
+
+@media (min-width: 900px) {
+  .foot > div {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .foot > div > div {
+    flex: 1;
+  }
+}

@@ -1,0 +1,80 @@
+
+/* Wrapper to contain the cards side by side */
+.ai-cards-wrapper .ai-cards > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each list item (li) should take equal space side by side */
+.ai-cards-wrapper .ai-cards > ul > li {
+  flex: 1;
+  margin: 10px; /* optional: adds some spacing between the items */
+  border: none; /* remove border if present */
+  background-color: transparent; /* set background to transparent */
+}
+
+/* Styling for the vertical list on the left */
+.ai-cards-wrapper .ai-cards > ul > li:first-child .ai-cards-card-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* spacing between the text elements */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:first-child h2 a {
+  display: block; /* ensures each link is block level for better spacing control */
+  margin: 5px 0; /* optional: adds some spacing between the links */
+  color: black; /* set the text color */
+  text-decoration: none; /* remove underline */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:first-child h2 a:hover {
+  color: red; /* highlight color for hover state */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:first-child h2#partner-engagement a {
+  color: red; /* highlight the selected item */
+}
+
+/* Adjust the layout for the card on the right */
+.ai-cards-wrapper .ai-cards > ul > li:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .ai-cards-card-image {
+  width: 100%;
+  margin-bottom: 10px; /* spacing between the image and text */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .ai-cards-card-body {
+  display: flex;
+  flex-direction: column;
+  background: white; /* background color for the card */
+  padding: 15px;
+  border-radius: 8px; /* rounded corners */
+  border: 1px solid #dadada; /* border around the card */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .ai-cards-card-body h2 {
+  margin: 10px 0;
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .ai-cards-card-body p {
+  margin: 10px 0;
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .button-container {
+  margin-top: 20px; /* spacing above the button */
+}
+
+.ai-cards-wrapper .ai-cards > ul > li:last-child .button {
+  color: red; /* styling the button as per the provided image */
+  text-decoration: none;
+  font-weight: bold;
+  background: none; /* remove button background */
+  border: none; /* remove button border */
+  padding: 0; /* remove button padding */
+}

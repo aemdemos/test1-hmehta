@@ -1,0 +1,33 @@
+
+.ai-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--light-color); /* Light background color */
+  width: 100%; /* Make the wrapper take full width */
+  max-width: unset;
+}
+
+.ai-title.block > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ai-title.block h2 {
+  font-size: var(--heading-font-size-xl); /* Larger font size for the title */
+  font-weight: normal; /* Normal font weight for the title */
+  margin: 0; /* Remove default margins */
+  padding: 0;
+}
+
+.ai-title.block p {
+  font-size: var(--body-font-size-m); /* Smaller font size for the subtitle */
+  margin: 10px 0 0 0; /* Adjust margin to fine-tune spacing */
+  padding: 0;
+  line-height: 1.6; /* Adjust line height for better readability */
+  text-align: center; /* Ensure the text is centered */
+}

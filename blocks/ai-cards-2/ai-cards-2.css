@@ -1,0 +1,73 @@
+
+/* Overall Block Styling */
+.ai-cards-2-wrapper {
+    background-color: #003366; /* Dark blue background */
+    padding: 20px;
+    color: white;
+    background-image: url('path/to/abstract-pattern.png'); /* Add background pattern */
+    background-size: cover;
+}
+
+/* Headline Styling */
+.ai-cards-2 > ul > li:first-child .ai-cards-2-card-body {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ai-cards-2 .ai-cards-2-card-body h2#engaged-audiences-unrivaled-access-strategic-insights {
+    font-size: 24px; /* Adjust as needed */
+    color: white; /* Ensure the headline text is white */
+}
+
+/* Card Container Styling */
+.ai-cards-2 > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Row Styling */
+.ai-cards-2 > ul > li:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card Body Styling */
+.ai-cards-2 .ai-cards-2-card-body {
+    background-color: white;
+    color: black; /* Text color inside cards */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); /* Ensure three cards per row */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Specific Cards Styling */
+.ai-cards-2 .ai-cards-2-card-body h2, .ai-cards-2 .ai-cards-2-card-body p {
+    margin: 10px 0;
+}
+
+/* Button Styling */
+.ai-cards-2-container > .ai-cards-2-wrapper > .block.ai-cards-2 .button {
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    padding: 0; /* Remove button padding */
+}
+
+.ai-cards-2-container > .ai-cards-2-wrapper > .block.ai-cards-2 .button::after {
+    content: '→'; /* Arrow icon */
+    margin-left: 5px;
+}
