@@ -4,4 +4,4 @@ Fix #<gh-issue-id>
 
 Test URLs:
 - Before: https://main--test1-hmehta--aemdemos.aem.live/
-- After: https://<branch>--test1-hmehta--aemdemos.aem.live/
+- After: https://main--test1-hmehta--aemdemos.aem.live/
