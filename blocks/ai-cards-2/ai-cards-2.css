@@ -6,6 +6,7 @@
     color: white;
     background-image: url('path/to/abstract-pattern.png'); /* Add background pattern */
     background-size: cover;
+    text-align: center; /* Center-align text */
 }
 
 /* Headline Styling */
@@ -13,6 +14,8 @@
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .ai-cards-2 .ai-cards-2-card-body h2#engaged-audiences-unrivaled-access-strategic-insights {
@@ -31,16 +34,27 @@
     align-items: center;
 }
 
-/* Row Styling */
-.ai-cards-2 > ul > li:not(:first-child) {
+/* Card Rows Styling */
+.ai-cards-2 > ul > li:nth-child(2) > .ai-cards-2-card-body {
     display: flex;
+    flex-direction: row; /* Ensure cards are side by side */
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+    justify-content: center; /* Center-align cards */
 }
 
-/* Card Body Styling */
-.ai-cards-2 .ai-cards-2-card-body {
+.ai-cards-2 > ul > li:nth-child(2) > .ai-cards-2-card-body > div {
+    display: flex;
+    flex-direction: row; /* Ensure cards within rows are side by side */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center; /* Center-align cards */
+}
+
+/* Individual Cards Styling */
+.ai-cards-2 > ul > li:nth-child(2) > .ai-cards-2-card-body > div > .ai-cards-2-card-body {
     background-color: white;
     color: black; /* Text color inside cards */
     border-radius: 10px;
@@ -48,11 +62,16 @@
     text-align: center;
     flex: 1 1 calc(33.333% - 20px); /* Ensure three cards per row */
     box-sizing: border-box; /* Ensure padding and border are included in width */
+    max-width: calc(33.333% - 20px); /* Ensure cards do not stretch too wide */
 }
 
 /* Specific Cards Styling */
 .ai-cards-2 .ai-cards-2-card-body h2, .ai-cards-2 .ai-cards-2-card-body p {
     margin: 10px 0;
+}
+
+.ai-cards-2 .ai-cards-2-card-body h2 {
+    color: red; /* Red color for heading text */
 }
 
 /* Button Styling */
